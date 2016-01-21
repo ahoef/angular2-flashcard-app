@@ -1,0 +1,90 @@
+body {
+    @include base-style(#444);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #444;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#flashcard {
+    @include card;
+    margin: 60px auto 30px;
+    position: relative;
+    .card-stack-1 {
+        @include card-stack(1);
+    }
+    .card-stack-2 {
+        @include card-stack(2);
+    }
+    .card-stack-3 {
+        @include card-stack(3);
+    }
+}
+
+.question-container, .answer-container {
+    height: 190px;
+    padding: 15px 0;
+    position: relative;
+}
+
+.answer-container {
+    height: 270px;
+}
+
+.question, .answer {
+    @include center-align;
+    width: 100%;
+}
+
+.answer {
+    // display: none;
+    small {
+        display: block;
+        margin-top: 20px;
+    }
+    a {
+        @include link-style;
+    }
+}
+
+button {
+    @include base-style(white);
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.faded {
+    opacity: .2;
+    &:hover {
+        cursor: default;
+    }
+}
+
+footer {
+    margin: 100px 20px 50px;
+    font-size: 14px;
+    color: lighten($main-color, 30%);
+    a {
+        @include link-style;
+    }
+
+}
+
+@media (max-width: 640px) {
+    body {
+        font-size: 16px;
+    }
+    .question-container, .answer-container {
+        height: 160px;
+    }
+    .answer-container {
+        height: 240px;
+    }
+}

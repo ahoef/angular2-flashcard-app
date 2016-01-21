@@ -1,0 +1,49 @@
+@mixin base-style($text-color) {
+    background-color: $main-color;
+    font-family: 'Rambla', sans-serif;
+    font-size: 18px;
+    color: $text-color;
+}
+
+@mixin card {
+    border: 3px solid $main-color;
+    border-radius: 5px;
+    max-width: 300px;
+    width: 90%;
+    height: 520px;
+    padding: 0 40px;
+    background-color: white;
+    @media (max-width: 640px) {
+        max-width: 240px;
+        padding: 0 20px;
+        height: 460px;
+    }
+}
+
+@mixin card-stack($offset) {
+    @include card;
+    position: absolute;
+    top: (-10 * $offset) - 3 + px;
+    right: (-10 * $offset) - 3 + px;
+    z-index: -($offset);
+}
+
+@mixin center-align {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@mixin link-style {
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: lighten($main-color, 30%);
+    &:hover {
+        border-bottom: none;
+    }
+}
