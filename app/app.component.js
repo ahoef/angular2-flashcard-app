@@ -8,12 +8,13 @@ System.register(['angular2/core'], function(exports_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
+    var core_1, core_2;
     var AppComponent, FLASHCARDS;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+                core_2 = core_1_1;
             }],
         execute: function() {
             // decorator syntax
@@ -141,6 +142,7 @@ System.register(['angular2/core'], function(exports_1) {
                     sourceUrl: "hhttp://digital-photography-school.com/how-to-use-drones-to-do-stunning-aerial-photography/"
                 }
             ];
+            core_2.enableProdMode();
         }
     }
 });

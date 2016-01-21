@@ -2,7 +2,7 @@
 
 A basic Angular2 app written with TypeScript and Sass. Users can view flashcard questions, click to reveal answers, and paginate forward and backward through cards.
 
-[http://www.ahoef.co/flashcards](www.ahoef.co/flashcards)
+<!-- [http://www.ahoef.co/flashcards](www.ahoef.co/flashcards) -->
 
 
 ### Development 
@@ -25,3 +25,7 @@ I chose to set up my flashcard content around JavaScript, but you could easily c
 	sourceUrl: "http://www.nikonusa.com/en/learn-and-explore/article/g3cu6o1r/understanding-maximum-aperture.html"
 }
 ```
+
+##### Also check out
+[https://github.com/ahoef/es2015-flashcard-app](A vanilla ES2015 version of this app)
+[https://github.com/ahoef/react-redux-flashcard-app](A React & Redux version of this app)

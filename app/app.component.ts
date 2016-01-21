@@ -1,4 +1,5 @@
 import {Component} from 'angular2/core';
+import {enableProdMode} from 'angular2/core';
 
 // Similar to a class. If we only need type checking, the interface is sufficient and lighter weight.
 interface Flashcard {
@@ -134,3 +135,5 @@ var FLASHCARDS: Flashcard[] = [
 		sourceUrl: "hhttp://digital-photography-school.com/how-to-use-drones-to-do-stunning-aerial-photography/"
 	}
 ];
+
+export enableProdMode();
