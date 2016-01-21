@@ -1,0 +1,26 @@
+<section id="flashcard">
+	<article class="card">
+		<div class="question-container">
+			<div class="question">{{flashcards[cardIndex].question}}</div>
+		</div>
+
+		<div class="answer-container">
+			<div class="answer" *ngIf="!answerHidden">
+				{{flashcards[cardIndex].answer}}
+				<small>
+					<a href="{{flashcards[cardIndex].sourceUrl}}">{{flashcards[cardIndex].source}}</a>
+				</small>
+			</div>
+		</div>
+	</article>
+
+	<div class="card-stack-1"></div>
+	<div class="card-stack-2"></div>
+	<div class="card-stack-3"></div>
+</section>
+
+<section id="controls">
+	<button class="back" [class.faded]="cardOrderIndex.length < 1" (click)="goToPrevCard()">&lt;</button>
+	<button class="show-answer" (click)="showAnswer()">show answer</button>
+	<button class="next" (click)="goToNextCard()">&gt;</button>
+</section>
