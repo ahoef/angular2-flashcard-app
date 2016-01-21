@@ -1,9 +1,4 @@
-node_modules
-todo.txt
+slides/
+*.map
+node_modules/
 .sass-cache/
-src/.DS_Store
-notes.txt
-
-
-
-

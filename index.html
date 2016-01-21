@@ -1,18 +1,44 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Angular 2 Flashcard App</title>
 
-  <head>
-    <title>Angular2 Flashcard App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta name="description" content="This is a basic flashcard app built by Alexandra Hoefinger, using Angular2, TypeScript, and Sass">
 
-    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
-    <script src="node_modules/rxjs/bundles/Rx.umd.js"></script>
-    <script src="node_modules/angular2/bundles/angular2-all.umd.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>
+        <link href='css/dist/styles.css' rel='stylesheet' type='text/css'>
 
-    <script src='dist/bundle.js'></script>
+        <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+        <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
 
-  </head>
+        <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
+        <script src="node_modules/rxjs/bundles/Rx.js"></script>
+        <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+        <script>
+            System.config({
+                packages: {        
+                    app: {
+                        format: 'register',
+                        defaultExtension: 'js'
+                    }
+                }
+            });
+            System.import('app/boot')
+                .then(null, console.error.bind(console));
+        </script>
+
+    </head>
 
   <body>
-    <my-app>Loading...</my-app>
+        <my-app></my-app>
   </body>
+
+  <footer>
+        Built with Angular2, TypeScript, & Sass &mdash; <a href="https://github.com/ahoef/angular2-flashcard-app">check out the code!</a>
+  </footer>
 
 </html>

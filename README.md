@@ -1,23 +1,27 @@
 # Angular2 Flashcard App
 
-<!-- A basic MVC app written in vanilla ES2015 JavaScript, with a toolset of Babel, Gulp, Browserify and Sass. Users can view flashcard questions, click to reveal answers, and paginate forward and backward through cards.
+A basic Angular2 app written with TypeScript and Sass. Users can view flashcard questions, click to reveal answers, and paginate forward and backward through cards.
 
-[www.ahoef.co/js-flashcards](www.ahoef.co/js-flashcards)
+[www.ahoef.co/flashcards](www.ahoef.co/flashcards)
 
 
 ### Development 
 
-Clone or fork this repo, run `npm install` from the directory, then run `gulp`, and you're all set! A local server isn't required. 
+##### Install Dependencies
+Clone or fork this repo, run `npm install` from the directory, then run `npm start`, and you're all set! A local server will be started at port 3000.
 
+
+##### Compile styles
+`$ sass --watch css/src/site.scss css/dist/styles.css`
+ 
+##### Go nuts!
 I chose to set up my flashcard content around JavaScript, but you could easily change the questions and answers to whatever you'd like to study. Here's the schema for a card:
 
 ```javascript
 {
-	question: "What is a pure function?",
-	answer: "A pure function is a function that, given the same input, will always return the same output and does not have any observable side effect.",
-	source: "Professor Frisby's Mostly Adequate Guide to Functional Programming",
-	sourceUrl: "https://drboolean.gitbooks.io/mostly-adequate-guide/content/ch3.html"
+	question: "How does aperture affect shutter speed?",
+	answer: "Using a low f/stop means more light is entering the lens and therefore the shutter doesn't need to stay open as long to make a correct exposure which translates into a faster shutter speed.",
+	source: "Nikon - Understanding Maximum Aperture",
+	sourceUrl: "http://www.nikonusa.com/en/learn-and-explore/article/g3cu6o1r/understanding-maximum-aperture.html"
 }
-``` -->
-
-
+```
