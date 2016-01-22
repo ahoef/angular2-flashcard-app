@@ -2,7 +2,7 @@
 
 A basic Angular2 app written with TypeScript and Sass. Users can view flashcard questions, click to reveal answers, and paginate forward and backward through cards.
 
-<!-- [http://www.ahoef.co/flashcards](www.ahoef.co/flashcards) -->
+[http://www.ahoef.co/flashcards](www.ahoef.co/flashcards)
 
 
 ### Development 
@@ -15,7 +15,7 @@ Clone or fork this repo, run `npm install` from the directory, then run `npm sta
 `$ sass --watch css/src/site.scss css/dist/styles.css`
  
 ##### Go nuts!
-I chose to set up my flashcard content around JavaScript, but you could easily change the questions and answers to whatever you'd like to study. Here's the schema for a card:
+I chose to set up my flashcard content around photography, but you could easily change the questions and answers to whatever you'd like to study. Here's the schema for a card:
 
 ```javascript
 {
