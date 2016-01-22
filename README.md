@@ -28,4 +28,5 @@ I chose to set up my flashcard content around photography, but you could easily 
 
 ##### Also check out
 [https://github.com/ahoef/es2015-flashcard-app](A vanilla ES2015 version of this app)
+
 [https://github.com/ahoef/react-redux-flashcard-app](A React & Redux version of this app)
