@@ -12,17 +12,16 @@ Clone or fork this repo, run `npm install` from the directory, then run `npm sta
 
 
 ##### Compile styles
-`$ sass --watch css/src/site.scss css/dist/styles.css`
+`$ sass --watch css/src/site.scss:css/dist/styles.css
  
 ##### Go nuts!
 I chose to set up my flashcard content around photography, but you could easily change the questions and answers to whatever you'd like to study. Here's the schema for a card:
 
 ```javascript
 {
-	question: "How does aperture affect shutter speed?",
-	answer: "Using a low f/stop means more light is entering the lens and therefore the shutter doesn't need to stay open as long to make a correct exposure which translates into a faster shutter speed.",
-	source: "Nikon - Understanding Maximum Aperture",
-	sourceUrl: "http://www.nikonusa.com/en/learn-and-explore/article/g3cu6o1r/understanding-maximum-aperture.html"
+	word: "reticent",
+	definition: "tightlipped, not prone to saying much, reluctant",
+	example: "Paul was reticent and preferred observing others mannerisms."
 }
 ```
 
