@@ -39,13 +39,10 @@ body {
 }
 
 .answer {
-    // display: none;
     small {
         display: block;
         margin-top: 20px;
-    }
-    a {
-        @include link-style;
+        color: lighten($main-color, 30%);
     }
 }
 

@@ -97,14 +97,8 @@ body {
 
 .answer small {
   display: block;
-  margin-top: 20px; }
-.answer a {
-  font-size: 14px;
-  text-decoration: none;
-  border-bottom: 1px solid;
+  margin-top: 20px;
   color: #b7b7b7; }
-  .answer a:hover {
-    border-bottom: none; }
 
 button {
   background-color: #6B6A6A;
