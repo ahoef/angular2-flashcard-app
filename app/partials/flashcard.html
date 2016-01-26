@@ -1,15 +1,13 @@
 <section id="flashcard">
 	<article class="card">
 		<div class="question-container">
-			<div class="question">{{flashcards[cardIndex].question}}</div>
+			<div class="question">{{flashcards[cardIndex].word}}</div>
 		</div>
 
 		<div class="answer-container">
 			<div class="answer" *ngIf="!answerHidden">
-				{{flashcards[cardIndex].answer}}
-				<small>
-					<a href="{{flashcards[cardIndex].sourceUrl}}">{{flashcards[cardIndex].source}}</a>
-				</small>
+				{{flashcards[cardIndex].definition}}
+				<small>{{flashcards[cardIndex].example}}</small>
 			</div>
 		</div>
 	</article>
