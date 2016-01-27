@@ -107,6 +107,36 @@ System.register(['angular2/core'], function(exports_1) {
                     word: "egregious",
                     definition: "standing out in a negative way; shockingly bad",
                     example: "The dictator’s abuse of human rights was so egregious that many world leaders demanded that he be tried in an international court for genocide."
+                },
+                {
+                    word: "chicanery",
+                    definition: "the use of tricks to deceive someone",
+                    example: "In their zeal to avoid resurrecting the sport’s reputation for chicanery, they tried to bury the incident."
+                },
+                {
+                    word: "aberrant",
+                    definition: "markedly different from an accepted norm",
+                    example: "This is a rather aberrant species of Buarremon, as yet only known from Tucuman, where it was discovered by Schulz."
+                },
+                {
+                    word: "laud",
+                    definition: "to praise, glorify, or honor",
+                    example: "This poses a challenge for Sanders, who must simultaneously laud Obamacare and insist that something much better must replace it."
+                },
+                {
+                    word: "cogent",
+                    definition: "powerfully persuasive",
+                    example: "The third objection is the most cogent: In the U.S., infrastructure projects take too long and cost too much."
+                },
+                {
+                    word: "abstemious",
+                    definition: "marked by temperance in indulgence",
+                    example: "He gradually became abstemious in his diet, and in 1765 he began to drink nothing but water."
+                },
+                {
+                    word: "efficacy",
+                    definition: "capacity or power to produce a desired effect",
+                    example: "By allowing people literally to be the government, just as in ancient Athens, people develop higher levels of political efficacy."
                 }
             ];
             core_2.enableProdMode();
