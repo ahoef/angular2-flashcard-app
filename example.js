@@ -2,13 +2,13 @@
 
 //controller
 angular.module('foo')
-	.controller('myMessage', function($scope) {
-		$scope.message = 'Look out for that rock!';
-	});
+    .controller('myMessage', function($scope) {
+        $scope.message = 'Look out for that rock!';
+    });
 
 //view
 <div ng-controller="myMessage">
-	{{ message }}
+    {{ message }}
 </div>
 
 
@@ -19,13 +19,13 @@ angular.module('foo')
 import { Component } from 'angular2/angular2';
 
 @Component({
-	selector: 'message-widget',
-	templateUrl: `{{ message }}`,
-	inputs: ['message']
+    selector: 'message-widget',
+    templateUrl: `{{ message }}`,
+    inputs: ['message']
 })
 
 export class myMessage {
-	constructor(public message: string) {}
+    constructor(public message: string) {}
 }
 
 
@@ -33,16 +33,16 @@ export class myMessage {
 //angular 2 es5
 
 var myMessage = ng.
-	Component({
-		selector: 'message-widget',
-	})
-	.View({
-		template: '{{ message }}'
-	})
-	.Class({
-		constructor: function(message) {
-		this.message = message;
-	}
+    Component({
+        selector: 'message-widget',
+    })
+    .View({
+        template: '{{ message }}'
+    })
+    .Class({
+        constructor: function(message) {
+        this.message = message;
+    }
 });
 
 
