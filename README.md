@@ -2,7 +2,7 @@
 
 A basic Angular2 app written with TypeScript and Sass. Users can view flashcard questions, click to reveal answers, and paginate forward and backward through cards.
 
-[http://www.ahoef.co/flashcards](www.ahoef.co/flashcards)
+[http://ahoef.co/vocab-flashcards/](www.ahoef.co/vocab-flashcards)
 
 
 ### Development 
